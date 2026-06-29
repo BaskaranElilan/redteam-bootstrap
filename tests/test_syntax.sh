@@ -5,7 +5,7 @@ ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 failures=0
 
 while IFS= read -r file; do
-  printf 'bash -n %s\n' "${file#${ROOT}/}"
+  printf 'bash -n %s\n' "${file#"${ROOT}"/}"
   if ! bash -n "${file}"; then
     failures=$((failures + 1))
   fi
