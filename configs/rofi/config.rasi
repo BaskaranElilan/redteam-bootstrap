@@ -1,0 +1,61 @@
+configuration {
+  modi: "drun,run,window,ssh";
+  show-icons: true;
+  terminal: "kitty";
+  drun-display-format: "{name}";
+  display-drun: "apps";
+  display-run: "run";
+  display-window: "win";
+  display-ssh: "ssh";
+}
+
+* {
+  bg: #1e1e2e;
+  fg: #cdd6f4;
+  blue: #89b4fa;
+  red: #f38ba8;
+  muted: #6c7086;
+}
+
+window {
+  width: 42%;
+  border: 2px;
+  border-color: @blue;
+  background-color: @bg;
+}
+
+mainbox {
+  padding: 12px;
+  spacing: 8px;
+  background-color: @bg;
+}
+
+inputbar {
+  padding: 8px;
+  border: 1px;
+  border-color: @muted;
+  children: [prompt, entry];
+}
+
+prompt {
+  text-color: @blue;
+  padding: 0 8px 0 0;
+}
+
+entry {
+  text-color: @fg;
+}
+
+listview {
+  lines: 10;
+  spacing: 4px;
+}
+
+element {
+  padding: 8px;
+}
+
+element selected {
+  background-color: @blue;
+  text-color: @bg;
+}

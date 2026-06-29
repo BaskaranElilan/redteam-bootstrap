@@ -1,0 +1,23 @@
+# Runtime files
+logs/*
+!logs/.gitkeep
+backups/*
+!backups/.gitkeep
+.cache/
+
+# Local environment overrides
+.env
+*.local
+
+# Editor and OS noise
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
